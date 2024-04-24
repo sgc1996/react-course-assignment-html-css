@@ -16,22 +16,47 @@
 </head>
 <body>
 
-    <nav class="main-navbar">
+    <!-- <nav class="main-navbar">
         <div class="items">
-            <img src="assets/images/logo.png" alt="Company Logo">
-            <ul class="nav-manu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" stroke-width="2" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
+            <div class="nav-menu-top">
+                <img src="assets/images/logo.png" alt="Company Logo">
+            </div>
+            <div class="nav-menu-bottom">
+                <ul id="navigation" class="nav-manu-items">
+                    <li><a class="menu-item" href="#">Home</a></li>
+                    <li><a class="menu-item" href="#">About Us</a></li>
+                    <li><a class="menu-item" href="#">Services</a></li>
+                    <li><a class="menu-item" href="#">Products</a></li>
+                    <li><a class="menu-item" href="#">Blog</a></li>
+                    <li><a class="menu-item" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <a class="search-icon" href="#"><i class="bi bi-search"></i></a>
         </div>
-    </nav>
+    </nav> -->
+
+    <header class="page-header">
+        <div class="page-header-top">
+          <div class='page-header-logo'><img src="assets/images/logo.png" alt="Company Logo"></div>
+          <div class="page-header-toggle" onclick="toggleMenu()"><i class="bi bi-list"></i></div>
+          <div class="search-icon-responsive">
+              <a href="#"><i class="bi bi-search"></i></a>
+          </div>
+        </div>
+        <nav class="page-header-bottom">
+          <ul id="navigation" class="navigation">
+            <li class="navigation-item">Home</li>
+            <li class="navigation-item">About</li>
+            <li class="navigation-item">Services</li>
+            <li class="navigation-item">Products</li>
+            <li class="navigation-item">Blog</li>
+            <li class="navigation-item">Contact Us</li>
+          </ul>
+        </nav>
+        <div class="search-icon">
+          <a href="#"><i class="bi bi-search"></i></a>
+      </div>
+      </header>
 
     <div class="hero-main-section">
         <div class="container">
@@ -227,7 +252,7 @@
 
     <!--  -->
     <div class="testimonial pd-t pd-b">
-        <div class="container">
+        <div class="container responsive-container">
             <h4 class="sub-title">Press</h4>
             <h2 class="title">They are Talking About Us</h2>
 
@@ -235,31 +260,31 @@
                 <div class="tag">
                     <div class="tag-items">
                         <div class="item active">
-                            <img src="assets/images/user.jpg" alt="testimonial User"><a href="#">Photodune</a>
+                            <a class="tag-link" ><i class="bi bi-person-fill"></i> Photodune 1</a>
                         </div>
                         <div class="item">
-                            <img src="assets/images/user.jpg" alt="testimonial User"><a href="#">Photodune</a>
+                            <a class="tag-link" ><i class="bi bi-person-fill"></i> Photodune 2</a>
                         </div>
                         <div class="item">
-                            <img src="assets/images/user.jpg" alt="testimonial User"><a href="#">Photodune</a>
+                            <a class="tag-link" ><i class="bi bi-person-fill"></i> Photodune 3</a>
                         </div>
                         <div class="item">
-                            <img src="assets/images/user.jpg" alt="testimonial User"><a href="#">Photodune</a>
+                            <a class="tag-link" ><i class="bi bi-person-fill"></i> Photodune 4</a>
                         </div>
                     </div>
                 </div>
                 <div class="feedback-msg">
                     <div class="msg">
-                        <p id="msg-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
+                        <p id="msg-1">Message 01, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
                     </div>
                     <div class="msg">
-                        <p id="msg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
+                        <p id="msg-2">Message 02, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
                     </div>
                     <div class="msg">
-                        <p id="msg-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
+                        <p id="msg-3">Message 03, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
                     </div>
                     <div class="msg">
-                        <p id="msg-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
+                        <p id="msg-4">Message 04, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque amet iste nam quia, eaque accusantium perspiciatis, repellat eum eveniet necessitatibus provident cupiditate molestias voluptatem, error ducimus molestiae voluptate? Dolore, ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat totam illum ipsum commodi fuga voluptate eum officiis maiores quibusdam laudantium, magnam amet quis exercitationem aliquid, ipsam deleniti. Eius, quaerat!</p>
                     </div>
                     <div class="arrow">
                         <button id="prev">
@@ -330,6 +355,7 @@
         </div>
     </div>
 
+    <script src="assets/js/main.js"></script>
     
 </body>
 </html>
