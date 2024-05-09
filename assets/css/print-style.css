@@ -183,7 +183,7 @@
 
     /* Testimonial */
     .testimonial-print {
-        background-color: var(--light-background-color);
+        display: block;
         margin-top: -130px;
     }
     

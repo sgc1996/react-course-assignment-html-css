@@ -167,7 +167,7 @@ ul {
   }
 
   .navigation-visible li:hover {
-    color: var(--background-color);
+    color: #313131;
   }
 
 .search-icon {
@@ -209,10 +209,12 @@ ul {
   .navigation-item {
     opacity: 0.8;
     display: inline-block;
+    transition: 0.3s;
   }
   .navigation-item:hover {
     cursor: pointer;
     opacity: 1;
+    font-weight: 500;
   }
 }
 
@@ -1096,10 +1098,6 @@ button#prev {
     opacity: 1;
 }
 
-.testimonial-print {
-    display: none;
-}
-
 
 @media only screen and (max-width: 990px) {
     .responsive-container {
@@ -1307,4 +1305,8 @@ button#prev {
         justify-content: space-around;
         align-items: center;
     }
+}
+
+.testimonial-print {
+    display: none;
 }
